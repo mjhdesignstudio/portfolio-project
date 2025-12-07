@@ -36,6 +36,11 @@ p {
   font-size: 36px;
 }
 
+.hero img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
 .btn-branding {
   background-color: var(--button-color);
   color: white;
