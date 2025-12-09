@@ -82,12 +82,21 @@ footer {
   text-decoration: none;
 }
 
-.about-hero {
+.content-container {
   padding: 160px 20px;
 }
 
-.about-section-content {
+.content {
   margin: 30px;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.content h3 {
+  line-height: 1.5;
+  margin: 20px 0 0;
 }
 
 .headshot {
@@ -95,17 +104,17 @@ footer {
   max-height: 500px;
 }
 
-.about-hero h3 {
+.content-container h3 {
   font-family: var(--h2-font);
   font-size: 40px;
 }
 
-.about-hero h1 {
+.content-container h1 {
   font-family: var(--h1-font);
   font-size: 60px;
 }
 
-.about-hero h2 {
+.content-container h2 {
   font-family: var(--h2-font);
   font-size: 18px;
 }
@@ -140,17 +149,17 @@ footer {
     line-height: 1.5;
   }
 
-  .about-hero {
+  .content.container {
     text-align: center;
     padding: 0;
   }
 
-  .about-hero h1 {
+  .content-container h1 {
     font-size: 36px;
     line-height: 1.2;
   }
 
-  .about-hero h3 {
+  .content-container h3 {
     font-size: 28px;
   }
 }
