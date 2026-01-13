@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For the Love of Music</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin: 0 auto;
+        color: #25161b;
+        line-height: 2;
+        font-family: zapfino, cursive;
+      }
+      h2 {
+        text-align: center;
+        margin: 0 auto;
+        color: #25161b;
+        line-height: 1.5;
+        border: 1px solid #453953;
+        border-radius: 6px;
+        font-family: avenir, Arial, Helvetica, sans-serif;
+        font-weight: normal;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 6px;
+        max-width: 100%;
+      }
+      hr {
+        color: #25161b;
+      }
+      div {
+        padding: 30px 60px;
+        background: linear-gradient(
+          44.8deg,
+          rgba(255, 136, 102, 0.67) -53.1%,
+          rgba(255, 221, 136, 0.28) 49%
+        );
+      }
+      span {
+        display: block;
+        font-size: 18px;
+        font-family: avenir, Arial, Helvetica, sans-serif;
+        padding: 10px;
+      }
+      a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-family: avenir, Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #453953;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        color: #25161b;
+        background-color: #f3cba5;
+        border: 1px solid #453953;
+        border-radius: 6px;
+        padding: 10px 20px;
+        font-size: 16px;
+        box-shadow: rgba(37, 22, 27, 0.08) 0px 8px 8px 0;
+        transition: all, 200ms, ease-in-out;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: transparent;
+      }
+      .container {
+        max-width: 600px;
+        padding: 30px 60px;
+        margin: 0 auto;
+      }
+      .footer {
+        font-family: avenir, Arial, Helvetica, sans-serif;
+        color: #453953;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mo's Ode to Music 🎶</h1>
+      <h2>Messing around with music since the 80's</h2>
+      <hr />
+      <p>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/153/original/playing_guitar.jpeg?1758737935"
+          alt="Melissa playing guitar as a young child"
+        />
+        <br />
+      </p>
+
+      <hr />
+      <span>
+        While I started playing my first instrument
+        <em>Viola</em>, in fifth grade, as you can see in the photo above, I
+        have been around music since I was very little. As a young child, I
+        remember almost always having some type of music playing around the
+        house. Whether it was classical or country, music was a constant in my
+        life.
+        <br />
+        I played for the local youth symphony from middle school through high
+        school and was fortunate enough to travel with them to Italy and later
+        Germany with my university's symphony orchestra. Since then, I have
+        started playing several other instruments including violin, acoustic
+        guitar, bass guitar, and even some piano.
+      </span>
+      <br />
+      <a href="https://en.wikipedia.org/wiki/Classical_music">
+        For more info on Classical Music, visit Wikipedia</a
+      >
+      <hr />
+      <button>👉🏻 Music Lessons</button>
+      <p class="footer"><strong>This page built by Melissa Hundley</strong></p>
+    </div>
+    <script>
+      function musicLessons() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email address?");
+        let city = prompt("What city, state do you live in?");
+        city = city.toLowerCase();
+        city = city.trim();
+        let instrument = prompt("What instrument would you like to learn?");
+        if (city === "portland, or") {
+          alert("Thank you " + name + "! I will email you soon! 🎻");
+        } else {
+          alert(
+            "Sorry " +
+              name +
+              ". I do not currently offer lessons in your area. 🥺"
+          );
+        }
+      }
+      let lessonsButton = document.querySelector("button");
+      lessonsButton.addEventListener("click", musicLessons);
+    </script>
+  </body>
+</html>
