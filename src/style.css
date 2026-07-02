@@ -171,9 +171,20 @@ a:hover {
   font-size: 24px;
 }
 
+.content-container h3 {
+  font-family: var(--branding-font);
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 .content-container p {
   font-size: 20px;
   line-height: 2;
+}
+
+.shop-icon {
+  border-radius: 8px;
+  max-height: 250px;
 }
 
 @media (max-width: 960px) {
