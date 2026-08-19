@@ -70,6 +70,41 @@ a:hover {
   color: var(--fourth-color) !important;
 }
 
+.about-sidebar {
+  background-color: #f8f7f4;
+  padding: 2rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.about-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.about-sidebar h3 {
+  margin-bottom: 0.75rem;
+}
+
+.about-sidebar p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-link {
+  font-family: var(--branding-font);
+  font-size: 18px;
+}
+
+.blog-image {
+  border-radius: 8px;
+  max-width: 70%;
+  text-align: center;
+}
+
 .hero {
   background-color: var(--primary-color);
   text-align: center;
@@ -161,7 +196,6 @@ a:hover {
 }
 
 .card-image {
-  /* Fix 3: Force the image to stay bounded by the card layout */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -173,7 +207,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Darkens image for text readability */
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,5 +386,14 @@ a:hover {
 
   h4 {
     font-size: 36px;
+  }
+
+  .about-sidebar {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+
+  .about-content {
+    position: static;
   }
 }
