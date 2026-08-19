@@ -230,6 +230,11 @@ a:hover {
   border-radius: 8px;
 }
 
+.blog-header {
+  text-align: center;
+  padding: 10px 10px;
+}
+
 .footer-link {
   color: var(--fourth-color);
   text-decoration: none;
