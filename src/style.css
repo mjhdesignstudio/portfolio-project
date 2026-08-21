@@ -47,7 +47,6 @@ footer .contact-box p {
 }
 
 a {
-  text-decoration: none;
   color: black;
   transition: all 100ms ease-in-out;
 }
