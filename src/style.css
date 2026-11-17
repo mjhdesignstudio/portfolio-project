@@ -104,6 +104,12 @@ a:hover {
   text-align: center;
 }
 
+.blog-image-small {
+  border-radius: 8px;
+  max-width: 25%;
+  text-align: center;
+}
+
 .hero {
   background-color: var(--primary-color);
   text-align: center;
